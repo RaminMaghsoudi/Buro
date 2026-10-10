@@ -24,44 +24,10 @@
   margin-top: -15px;
   margin-bottom: 35px;
 }
-.Item {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  margin-right: 35px;
-  direction: rtl;
-  width: 50%;
-  margin-top: 0px;
-  cursor: pointer;
-  padding: 3px 10px 4px 10px;
-  border-radius: 8px;
-  transition: background-color 0.2s ease;
-}
-.Item:hover {
-  background-color: rgba(165, 165, 164, 0.3);
-}
-.itemTitle {
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.dots {
-  flex: 1;
-  border-bottom: 1px dotted #555;
-  margin: 0 8px;
-  min-width: 10px;
-}
-.price {
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-.itemsubTitle {
-  font-family: CL;
-  color: gray;
-  font-size: 0.9rem;
-}
-.active {
-  color: #02444d;
-  font-family: CB;
+.Factor {
+  width: calc(100% - 250px);
+  min-height: 130px;
+  border-top: 1px solid #d6d4d4;
+  position: fixed;
+  margin-top: calc(100vh - 130px);
 }
