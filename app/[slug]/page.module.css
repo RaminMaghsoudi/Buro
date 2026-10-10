@@ -1,0 +1,67 @@
+.main {
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: center;
+  margin-left: 250px;
+}
+.title {
+  font-family: CB;
+  color: rgb(68, 65, 65);
+  margin-right: 35px;
+  margin-top: 35px;
+  font-size: 1.2rem;
+}
+.url {
+  font-family: CL;
+  color: gray;
+  font-size: 0.8rem;
+  margin-right: 35px;
+  margin-top: -15px;
+  margin-bottom: 35px;
+}
+.Item {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-right: 35px;
+  direction: rtl;
+  width: 50%;
+  margin-top: 0px;
+  cursor: pointer;
+  padding: 3px 10px 4px 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+.Item:hover {
+  background-color: rgba(165, 165, 164, 0.3);
+}
+.itemTitle {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dots {
+  flex: 1;
+  border-bottom: 1px dotted #555;
+  margin: 0 8px;
+  min-width: 10px;
+}
+.price {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.itemsubTitle {
+  font-family: CL;
+  color: gray;
+  font-size: 0.9rem;
+}
+.active {
+  color: #02444d;
+  font-family: CB;
+}

@@ -1,0 +1,88 @@
+.header {
+  width: 250px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: C;
+  border-right: 1px solid #d6d4d4;
+  z-index: 1000;
+}
+.search {
+  width: 180px;
+  min-height: 30px;
+  border-radius: 35px;
+  outline: none;
+  border: 1px solid #b3b2b2;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.addItems {
+  width: 250px;
+  min-height: 55px;
+  background: linear-gradient(90deg, #f9572a, #ff8a05);
+  position: fixed;
+  margin-top: calc(100vh - 55px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: CL;
+  color: black;
+  cursor: pointer;
+}
+.Items {
+  width: 249px;
+  height: calc(100vh - 155px);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-top: 75px;
+  align-items: center;
+  margin-left: -2px;
+}
+.Item {
+  width: 170px;
+  min-height: 50;
+  border-bottom: 1px solid #e4dede;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+  margin-top: 3px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  direction: rtl;
+  text-align: right;
+}
+.Item:hover {
+  background-color: rgba(165, 165, 164, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255);
+}
+.ItemTitle {
+  font-family: CB;
+  color: rgb(68, 65, 65);
+}
+.ItemSubTitle {
+  font-family: CL;
+  color: gray;
+  font-size: 0.8rem;
+}
+.activeMouses {
+  background-color: #d6dffd;
+  border-radius: 8px;
+}
+.active {
+  background-color: #d6dffd;
+  border-radius: 8px;
+}
