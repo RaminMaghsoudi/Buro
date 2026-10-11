@@ -6,7 +6,7 @@ import { BiMessageSquareCheck } from "react-icons/bi";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { useState } from "react";
 
-export default function ItemClick() {
+export default function ItemClick({ server }) {
   const [activeItems, setActiveItems] = useState([]);
   const handleClick = (item) => {
     setActiveItems((prev) =>
@@ -15,22 +15,16 @@ export default function ItemClick() {
         : [...prev, item],
     );
   };
-  const Servers = [
-    "ایجاد حساب کاربری سخا",
-    "ورود به سیستم سخا و پرینت برگه سخا بعد از تایید مامور پست",
-    "احراز نشانی محل سکونت توسط پست با پرینت و مراجعه مجدد و پرینت سخا",
-    "ایجاد حساب کاربری سامانه مالیات خودرو و استعلام با پرداخت از کارت مشتری با پرینت",
-  ];
 
-  return Servers.map((SM, ID) => (
+  return server.map((SM, ID) => (
     <Box
       key={ID}
-      onClick={() => handleClick(SM)}
+      onClick={() => handleClick(SM.subTitle)}
       className={`${classess.Item} ${
-        activeItems.includes(SM) ? classess.active : ""
+        activeItems.includes(SM.subTitle) ? classess.active : ""
       }`}
     >
-      {activeItems.includes(SM) ? (
+      {activeItems.includes(SM.subTitle) ? (
         <BiMessageSquareCheck
           size={15}
           style={{
@@ -52,9 +46,9 @@ export default function ItemClick() {
         />
       )}
 
-      <span className={classess.itemTitle}>{SM}</span>
+      <span className={classess.itemTitle}>{SM.subTitle}</span>
       <span className={classess.dots}></span>
-      <span className={classess.price}>144.000</span>
+      <span className={classess.price}>{SM.price}</span>
     </Box>
   ));
 }

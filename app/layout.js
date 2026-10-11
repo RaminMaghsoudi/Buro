@@ -1,4 +1,3 @@
-import Header from "@/components/header/Header";
 import "./globals.css";
 
 // export const metadata = {
@@ -6,10 +5,10 @@ import "./globals.css";
 //   description: "Delicious meals, shared by a food-loving community",
 // };
 export const metadata = {
-  title: "Meals - Create Next App",
-  description: "Delicious meals, shared by a food-loving community",
+  title: "Office - Create Next App",
+  description: "Delicious Office, shared by a customer community",
   generator: "Next.js",
-  applicationName: "Meals",
+  applicationName: "Office",
   referrer: "origin-when-cross-origin",
   keywords: ["Next.js", "React", "JavaScript"],
   authors: [{ name: "TESSA" }, { name: "TESSA", url: "Tessa24.com" }],
@@ -25,10 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
