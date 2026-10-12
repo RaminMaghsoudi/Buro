@@ -1,5 +1,5 @@
 .header {
-  width: 250px;
+  width: 300px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,19 +9,28 @@
   border-right: 1px solid #d6d4d4;
   z-index: 1000;
 }
-.search {
-  width: 180px;
-  min-height: 30px;
+.searchContainer {
+  width: 230px;
+  min-height: 38px;
   border-radius: 35px;
-  outline: none;
   border: 1px solid #b3b2b2;
   margin-top: 15px;
   margin-bottom: 25px;
   padding-left: 10px;
   padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.search {
+  width: 200px;
+  min-height: 25px;
+  outline: none;
+  border: none;
 }
 .addItems {
-  width: 250px;
+  width: 300px;
   min-height: 55px;
   background: linear-gradient(90deg, #f9572a, #ff8a05);
   position: fixed;
@@ -36,7 +45,7 @@
   cursor: pointer;
 }
 .Items {
-  width: 249px;
+  width: 300px;
   height: calc(100vh - 155px);
   position: fixed;
   display: flex;
@@ -48,7 +57,7 @@
   margin-left: -2px;
 }
 .Item {
-  width: 170px;
+  width: 230px;
   min-height: 50;
   border-bottom: 1px solid #e4dede;
   display: flex;
@@ -72,11 +81,13 @@
 .ItemTitle {
   font-family: CB;
   color: rgb(68, 65, 65);
+  margin-left: 35px;
 }
 .ItemSubTitle {
   font-family: CL;
   color: gray;
   font-size: 0.8rem;
+  margin-left: 35px;
 }
 .activeMouses {
   background-color: #d6dffd;
@@ -85,4 +96,13 @@
 .active {
   background-color: #d6dffd;
   border-radius: 8px;
+}
+.Forward {
+  position: fixed;
+  left: 250px;
+  color: gray;
+}
+.LuCar {
+  position: fixed;
+  color: rgba(30, 30, 30);
 }

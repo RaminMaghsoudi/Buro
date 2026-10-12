@@ -2,9 +2,9 @@
 
 import { Box } from "@mui/material";
 import classess from "./ItemClick.module.css";
-import { BiMessageSquareCheck } from "react-icons/bi";
-import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { useState } from "react";
+import { IoCheckmarkSharp } from "react-icons/io5";
+import { IoCheckmarkDoneSharp } from "react-icons/io5";
 
 export default function ItemClick({ server }) {
   const [activeItems, setActiveItems] = useState([]);
@@ -25,7 +25,7 @@ export default function ItemClick({ server }) {
       }`}
     >
       {activeItems.includes(SM.subTitle) ? (
-        <BiMessageSquareCheck
+        <IoCheckmarkDoneSharp
           size={15}
           style={{
             position: "relative",
@@ -35,7 +35,7 @@ export default function ItemClick({ server }) {
           }}
         />
       ) : (
-        <MdCheckBoxOutlineBlank
+        <IoCheckmarkSharp
           size={15}
           style={{
             position: "relative",

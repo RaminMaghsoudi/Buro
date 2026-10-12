@@ -7,7 +7,6 @@ export default async function HeaderSlug({ params }) {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
   const server = await getBurosByTitle(decodedSlug);
-  console.log("slug");
 
   return (
     <Box className={classess.main}>

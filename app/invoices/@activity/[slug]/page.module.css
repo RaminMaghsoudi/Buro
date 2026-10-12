@@ -1,5 +1,5 @@
 .main {
-  width: calc(100% - 250px);
+  width: calc(100% - 300px);
   min-height: 100vh;
   display: flex;
   position: fixed;
@@ -24,7 +24,7 @@
   margin-bottom: 35px;
 }
 .Factor {
-  width: calc(100% - 250px);
+  width: calc(100% - 300px);
   min-height: 130px;
   border-top: 1px solid #d6d4d4;
   position: fixed;

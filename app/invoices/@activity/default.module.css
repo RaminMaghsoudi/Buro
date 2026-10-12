@@ -1,5 +1,5 @@
 .Wrapper {
-  width: calc(100% - 250px);
+  width: calc(100% - 300px);
   min-height: 100vh;
   position: fixed;
   display: flex;

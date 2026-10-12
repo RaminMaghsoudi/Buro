@@ -1,4 +1,4 @@
-import classess from "./deault.module.css";
+import classess from "./default.module.css";
 import { Box } from "@mui/material";
 
 export default function AvtivityPage() {
