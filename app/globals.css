@@ -63,7 +63,7 @@ body {
   height: 100vh;
   position: fixed;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   overflow-y: scroll;
   scrollbar-width: none;
 }

@@ -1,0 +1,27 @@
+.li {
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.nav {
+  color: rgb(30, 30, 30);
+  font-family: CL;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.nav:hover {
+  color: #f3a01f;
+}
+.active {
+  color: black;
+  text-decoration: none;
+  font-family: CB;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-left: 60px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+  background-color: #bcbcb7;
+}
