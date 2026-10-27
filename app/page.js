@@ -54,8 +54,6 @@ export default function Home() {
           className={classess["Wrapper-Image"]}
           src={cycle}
           alt="cycle"
-          width={400}
-          height={521}
           priority
         />
       </Box>
