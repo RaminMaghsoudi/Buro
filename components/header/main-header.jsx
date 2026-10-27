@@ -8,40 +8,26 @@ export default function MainHeader() {
   return (
     <header className={classess["main-header"]}>
       <Box className={classess.logo}>
-        <Box className={classess["logo-items"]}>
-          <FaCanadianMapleLeaf
-            size={20}
-            className={classess["logo-items-icon"]}
-          />
-          BüROAUT
-          <span>automatisierung</span>
-        </Box>
+        <Link href="/" className={classess.navlink}>
+          <Box className={classess["logo-items"]}>
+            <FaCanadianMapleLeaf
+              size={20}
+              className={classess["logo-items-icon"]}
+            />
+            BüROAUT
+            <span>automatisierung</span>
+          </Box>
+        </Link>
       </Box>
       <Box className={classess.nav}>
-        <NavLink href="/news">Preis</NavLink>
-        <NavLink href="/archive">Rechnungen</NavLink>
-        <NavLink href="/archive">Aufgaben</NavLink>
+        <NavLink href="/preis">Preis</NavLink>
+        <NavLink href="/rechnungen">Rechnungen</NavLink>
+        <NavLink href="/aufgaben">Aufgaben</NavLink>
+        <NavLink href="/buchhaltung">Buchhaltung</NavLink>
       </Box>
       <Box className={classess.profile}>
         <Avatar className={classess["profile-avatar"]} />
       </Box>
-      {/* <Box className={classess.logo}>
-        <Box className={classess.topline}></Box>
-        <span className={classess.title}>BüROAUT</span>
-        <span className={classess.subtitle}>
-          <Box className={classess.line}></Box> automatisierung
-        </span>
-      </Box>
-      <nav>
-        <ul className={classess.UL}>
-          <NavLink href="/news">Preisübersicht</NavLink>
-          <NavLink href="/archive">Rechnungen</NavLink>
-          <NavLink href="/archive">Tägliche </NavLink>
-        </ul>
-      </nav>
-      <Box className={classess.profile}>
-        <Avatar />
-      </Box> */}
     </header>
   );
 }

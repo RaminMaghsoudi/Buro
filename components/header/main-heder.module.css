@@ -29,6 +29,10 @@
   align-items: center;
   justify-content: flex-end;
 }
+.navlink {
+  text-decoration: none;
+  color: black;
+}
 .logo-items {
   display: flex;
   flex-direction: column;
@@ -48,6 +52,7 @@
   padding-right: 5px;
   background-color: white;
   margin-top: 40px;
+  text-decoration: none;
 }
 .logo-items-icon {
   position: absolute;
