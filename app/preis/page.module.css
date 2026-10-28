@@ -1,12 +1,18 @@
 .Wrapper {
   width: 100%;
-  min-height: calc(100vh - 90px);
+  height: calc(100vh - 90px);
   position: fixed;
   display: flex;
   flex-direction: column;
   margin-top: 90px;
   align-items: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
+.Wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .title {
   color: #087e8b;
   font-family: CL;
