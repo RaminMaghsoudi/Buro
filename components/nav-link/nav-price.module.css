@@ -40,18 +40,18 @@
   transition: background-color 0.8s;
 }
 .nav:hover {
-  background-color: #00a78e;
+  background-color: #009d81;
 }
 .nav .icon {
   padding: 10px;
   border-radius: 15px 15px 0 15px;
-  background-color: #00a78e;
+  background-color: #009d81;
   color: white;
   transition: 0.8s;
 }
 .nav:hover .icon {
   background-color: white;
-  color: #00a78e;
+  color: #009d81;
 }
 .nav .icon-title {
   font-family: CL;

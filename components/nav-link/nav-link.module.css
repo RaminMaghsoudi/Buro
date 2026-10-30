@@ -13,12 +13,12 @@
   transition: 0.5s;
 }
 .nav:hover {
-  color: #06838d;
+  color: #009d81;
 }
 .active {
   position: relative;
   text-decoration: none;
-  color: #06838d;
+  color: #009d81;
 }
 .active::after {
   content: "";
