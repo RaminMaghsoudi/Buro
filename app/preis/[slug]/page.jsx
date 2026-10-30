@@ -7,34 +7,12 @@ import Stepper from "@/components/stepper/Stepper";
 export default async function SlugPreis({ params }) {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
-  const steps = [
-    {
-      id: 1,
-      label: "Hauptaktivität",
-      description: "مشخصات کاربر",
-    },
-    {
-      id: 2,
-      label: "اطلاعات تماس",
-      description: "شماره تماس و ایمیل",
-    },
-    {
-      id: 3,
-      label: "اطلاعات حساب",
-      description: "نام کاربری و رمز",
-    },
-    {
-      id: 4,
-      label: "Hauptaktivität",
-      description: "بررسی اطلاعات",
-    },
-  ];
 
   return (
     <Box className={classess.wrapper}>
       <h4 className={classess.title}>{decodedSlug}</h4>
       <Box className={classess.Roadmap}>
-        <Stepper steps={steps} currentStep={""} />
+        <Stepper />
       </Box>
       <Box className={classess["title-form"]}>
         <Box className={classess.form}>

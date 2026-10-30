@@ -1,145 +1,51 @@
 .stepper {
-  --step-color: #009d81;
-  --step-line: rgb(0, 157, 129, 0.5);
-  --step-text: #64748b;
-
   display: flex;
-  align-items: flex-start;
-
-  width: 100%;
-  padding: 24px 12px;
-  box-sizing: border-box;
+  flex-direction: row;
 }
-
-.step {
-  flex: 1;
-  min-width: 0;
-}
-
-.stepHeader {
+.stepp {
   display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.circle {
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 50%;
-  border: 2px solid var(--step-line);
-  color: var(--step-text);
-  background: #fff;
-  font-size: 0.8rem;
-  transition: all 0.25s ease;
-  font-family: CL;
 }
-
-.filled {
-  color: #fff;
-  background: var(--step-color);
-  border-color: var(--step-color);
-}
-
-.active {
-  box-shadow: 0 0 0 4px rgb(37 99 235 / 12%);
-}
-
-.empty {
-  background: #f8fafc;
-  color: #94a3b8;
-  border-color: #dbe2ea;
-}
-
-.check {
-  font-size: 18px;
-  line-height: 1;
-}
-
-.lineWrapper {
-  flex: 1;
-  padding: 0 10px;
-  min-width: 12px;
-}
-
-.line {
-  width: 100%;
-  height: 1px;
-  border-radius: 10px;
-  background: var(--step-line);
-  transition: background 0.25s ease;
-}
-
-.lineCompleted {
-  background: var(--step-color);
-}
-
-.label {
+.stepp-number,
+.stepp-number-empty {
+  padding: 3px 4px 5px 3px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding-top: 12px;
-  padding-left: 4px;
-  color: #334155;
-  text-align: right;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 15px;
+  min-height: 15px;
+  background-color: #009d81;
+  color: white;
+  font-family: CL;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  font-weight: bold;
+  position: relative;
 }
-
-.title {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
+.stepp-number::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 100px;
+  height: 1px;
+  background-color: #009d81;
+  transform: translateY(50%);
+  margin-top: -1px;
 }
-
-.description {
-  font-size: 12px;
-  line-height: 1.6;
-  color: #94a3b8;
+.stepp-title {
+  font-family: CL;
+  font-size: 1rem;
+  margin-top: 5px;
 }
-
-.activeLabel .title {
-  color: var(--step-color);
-}
-
-.inactiveLabel .title {
-  color: #94a3b8;
-}
-
-@media (max-width: 600px) {
-  .stepper {
-    padding: 18px 4px;
-  }
-
-  .circle {
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-  }
-
-  .lineWrapper {
-    padding: 0 5px;
-    min-width: 8px;
-  }
-
-  .line {
-    height: 2px;
-  }
-
-  .label {
-    padding-top: 10px;
-    padding-left: 2px;
-    gap: 3px;
-  }
-
-  .title {
-    font-size: 11px;
-    overflow-wrap: anywhere;
-  }
-
-  .description {
-    font-size: 10px;
-  }
+.stepp-suTitle {
+  font-family: CL;
+  font-size: 0.8rem;
+  color: rgba(100, 100, 100);
+  width: 80%;
 }

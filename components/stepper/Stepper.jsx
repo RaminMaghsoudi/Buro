@@ -2,54 +2,51 @@
 
 import styles from "./Stepper.module.css";
 
-export default function Stepper({ steps = [], currentStep = 0 }) {
+export default function Stepper() {
+  const steps = [
+    {
+      id: 1,
+      label: "Der Aktivität",
+      description: " Haupttitel der Aktivität",
+    },
+    {
+      id: 2,
+      label: "Der Aktivität",
+      description: " Haupttitel der Aktivität",
+    },
+    {
+      id: 3,
+      label: "Der Aktivität",
+      description: " Haupttitel der Aktivität",
+    },
+    {
+      id: 4,
+      label: "Der Aktivität",
+      description: " Haupttitel der Aktivität",
+    },
+    {
+      id: 5,
+      label: "Der Aktivität",
+      description: " Haupttitel der Aktivität",
+    },
+  ];
   return (
-    <div className={styles.stepper} dir="ltr">
-      {steps.map((step, index) => {
-        const isCompleted = index < currentStep;
-        const isActive = index === currentStep;
-        const isReached = index <= currentStep;
-
-        return (
-          <div className={styles.step} key={step.id ?? step.label}>
-            <div className={styles.stepHeader}>
-              <div
-                className={`${styles.circle} ${
-                  isReached ? styles.filled : styles.empty
-                } ${isActive ? styles.active : ""}`}
-              >
-                {isCompleted ? (
-                  <span className={styles.check}>✓</span>
-                ) : (
-                  index + 1
-                )}
-              </div>
-
-              {index < steps.length - 1 && (
-                <div className={styles.lineWrapper}>
-                  <div
-                    className={`${styles.line} ${
-                      isCompleted ? styles.lineCompleted : ""
-                    }`}
-                  />
-                </div>
-              )}
-            </div>
-
-            <div
-              className={`${styles.label} ${
-                isActive ? styles.activeLabel : ""
-              } ${!isReached ? styles.inactiveLabel : ""}`}
-            >
-              <span className={styles.title}>{step.label}</span>
-
-              {step.description && (
-                <span className={styles.description}>{step.description}</span>
-              )}
-            </div>
+    <div className={styles.stepper}>
+      {steps.map((item) => (
+        <div key={item.id} className={styles.stepp}>
+          <div
+            className={
+              steps.length !== item.id
+                ? styles["stepp-number"]
+                : styles["stepp-number-empty"]
+            }
+          >
+            {item.id}
           </div>
-        );
-      })}
+          <span className={styles["stepp-title"]}>{item.label}</span>
+          <span className={styles["stepp-suTitle"]}>{item.description}</span>
+        </div>
+      ))}
     </div>
   );
 }
