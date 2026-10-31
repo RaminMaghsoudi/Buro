@@ -8,6 +8,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 106px;
+  cursor: pointer;
 }
 .stepp-number,
 .stepp-number-empty {
@@ -19,7 +21,6 @@
   text-align: center;
   width: 15px;
   min-height: 15px;
-  background-color: #009d81;
   color: white;
   font-family: CL;
   font-size: 0.7rem;
@@ -32,9 +33,9 @@
   position: absolute;
   top: 50%;
   left: 100%;
-  width: 100px;
+  width: 85px;
   height: 1px;
-  background-color: #009d81;
+  background-color: var(--step-line-color);
   transform: translateY(50%);
   margin-top: -1px;
 }

@@ -10,29 +10,3 @@
   font-family: CL;
   color: #7b876f;
 }
-.Roadmap {
-  display: flex;
-  flex-direction: row;
-}
-.title-form {
-  display: flex;
-  flex-direction: row;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-}
-.input {
-  width: 300px;
-  min-height: 35px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid rgb(70, 70, 70, 0.5);
-  outline: none;
-  font-family: CL;
-  font-size: 1rem;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 15px;
-}

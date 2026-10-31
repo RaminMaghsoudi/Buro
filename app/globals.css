@@ -72,11 +72,11 @@ body {
 }
 .fadeUp {
   opacity: 0;
-  animation: fadeUp 2.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: fadeUp 2s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 .fadeIn {
   opacity: 0;
-  animation: fadeIn 2.5s ease both;
+  animation: fadeIn 2s ease both;
 }
 .delay1 {
   animation-delay: 0.1s;
@@ -132,7 +132,7 @@ body {
 @keyframes imageReveal {
   from {
     opacity: 0;
-    transform: translateX(35px) scale(0.98);
+    transform: translateX(-35px) scale(0.98);
   }
 
   to {
