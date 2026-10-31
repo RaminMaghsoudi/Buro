@@ -1,12 +1,13 @@
-.wrapper {
-  width: 100%;
-  min-height: auto;
+/* 
+.wrapper-price-list {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
 }
-.title {
+.main-title {
+  color: #009d81;
+  font-family: CL;
+} */
+.activity {
   font-family: CL;
   color: #7b876f;
 }
