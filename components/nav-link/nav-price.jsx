@@ -2,7 +2,6 @@
 
 import { Box } from "@mui/material";
 import classess from "./nav-price.module.css";
-
 import Link from "next/link";
 import React, { useState } from "react";
 import { Features_Price } from "@/data/DATA";

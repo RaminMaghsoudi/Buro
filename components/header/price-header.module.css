@@ -7,10 +7,14 @@
   font-family: CB;
   margin-top: -15px;
 }
+.activity {
+  font-family: CL;
+  color: #7b876f;
+  margin-top: -15px;
+}
 .points {
   display: flex;
   flex-direction: row;
-  margin-top: -10px;
 }
 .P1 {
   background-color: #009d81;

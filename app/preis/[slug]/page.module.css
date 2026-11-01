@@ -1,4 +1,19 @@
-/* 
+.slug {
+  width: 100%;
+  height: calc(100vh - 90px);
+  position: fixed;
+  display: flex;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-top: 90px;
+}
+.slug::-webkit-scrollbar {
+  display: none;
+}
+.slug-header {
+  display: flex;
+  flex-direction: column;
+}
 .wrapper-price-list {
   display: flex;
   flex-direction: row;
@@ -6,8 +21,4 @@
 .main-title {
   color: #009d81;
   font-family: CL;
-} */
-.activity {
-  font-family: CL;
-  color: #7b876f;
 }

@@ -11,19 +11,33 @@ export default async function SlugPreis({ params }) {
   const decodedSlug = decodeURIComponent(slug);
 
   return (
-    <>
-      <PriceHeader />
-      <h4 className={`fadeUp delay4 ${classess.activity}`}>{decodedSlug}</h4>
-      {/* 
+    <Box
+      className={classess.slug}
+      sx={{
+        flexDirection: decodedSlug === "Preis Liste" ? "row" : "column",
+        alignItems: decodedSlug === "Preis Liste" ? "flex-start" : "center",
+        justifyContent: decodedSlug === "Preis Liste" ? "center" : "flex-start",
+      }}
+    >
+      <Box
+        className={classess["slug-header"]}
+        sx={{
+          alignItems: decodedSlug === "Preis Liste" ? "" : "center",
+          justifyContent: decodedSlug === "Preis Liste" ? "" : "center",
+          textAlign: decodedSlug === "Preis Liste" ? "" : "center",
+          width: decodedSlug === "Preis Liste" ? "300px" : "200px",
+          marginTop: decodedSlug === "Preis Liste" ? "50px" : "0px",
+        }}
+      >
+        <PriceHeader decodedSlug={decodedSlug} />
+      </Box>
       {decodedSlug === "Neuen Preis hinzufügen" ? (
         <PreisForm />
       ) : decodedSlug === "Preis Liste" ? (
-        <Box
-          className={`fadeUp delay6 ${classess["wrapper-price-list"]}`}
-        ></Box>
-      ) : (
-        "546"
-      )} */}
-    </>
+        <Box className={`fadeUp delay6 ${classess["wrapper-price-list"]}`}>
+          ads
+        </Box>
+      ) : null}
+    </Box>
   );
 }

@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import classess from "./price-header.module.css";
 
-export default function PriceHeader() {
+export default function PriceHeader({ decodedSlug }) {
   return (
     <>
       <h3
@@ -11,7 +11,8 @@ export default function PriceHeader() {
         Preis
       </h3>
       <h1 className={` fadeUp delay2 ${classess.subTitle}`}>Preis Anbieter</h1>
-      <Box className={`fadeUp delay3 ${classess.points}`}>
+      <h4 className={`fadeUp delay3 ${classess.activity}`}>{decodedSlug}</h4>
+      <Box className={`fadeUp delay4 ${classess.points}`}>
         <Box className={classess.P1}></Box>
         <Box className={classess.P2}></Box>
         <Box className={classess.P3}></Box>

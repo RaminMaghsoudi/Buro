@@ -6,6 +6,8 @@ import classess from "./preisform.module.css";
 import { useState, useActionState } from "react";
 import { Save_Price } from "@/lib/actions";
 import PriceFormSubmit from "./price_form_submit";
+import { Features_Price } from "@/data/DATA";
+import Link from "next/link";
 
 export default function PreisForm() {
   const steps = [
@@ -160,6 +162,26 @@ export default function PreisForm() {
             </p>
           )}
         </form>
+      </Box>
+      <Box className={classess.footer}>
+        {Features_Price.map((item) => {
+          const Icon = item.icon;
+          const content = (
+            <Box className={classess.nav}>
+              <Icon size={18} className={classess.icon} />
+              <span className={classess["icon-title"]}>{item.title}</span>
+            </Box>
+          );
+          return (
+            <Link
+              key={item.id}
+              href={`${item.href}/${item.title}`}
+              className={classess.LINK}
+            >
+              {content}
+            </Link>
+          );
+        })}
       </Box>
     </Box>
   );
