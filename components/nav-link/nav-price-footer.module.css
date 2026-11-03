@@ -1,9 +1,10 @@
 .navigate {
   display: flex;
   gap: 0px;
-  margin-top: 180px;
   max-width: max-content;
   margin-bottom: 50px;
+  margin-top: calc(100vh - 170px);
+  position: fixed;
 }
 .LINK {
   text-decoration: none;

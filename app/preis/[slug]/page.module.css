@@ -17,8 +17,18 @@
 .wrapper-price-list {
   display: flex;
   flex-direction: row;
+  width: calc(100% - 500px);
+  min-height: 100%;
 }
-.main-title {
-  color: #009d81;
-  font-family: CL;
+.wrapper-price-list-items {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-height: 100%;
+}
+.wrapper-price-list-item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-height: 100%;
 }

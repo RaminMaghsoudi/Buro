@@ -8,7 +8,6 @@ import { Save_Price } from "@/lib/actions";
 import PriceFormSubmit from "./price_form_submit";
 import { Features_Price } from "@/data/DATA";
 import Link from "next/link";
-import NavPriceFooter from "../nav-link/nav-price-footer";
 
 export default function PreisForm() {
   const steps = [
@@ -58,47 +57,6 @@ export default function PreisForm() {
         <Stepper steps={steps} isActive={isActive} setIsActive={setIsActive} />
       </Box>
       <Box className={classess["title-form"]}>
-        {/* <form id="preis-form" className={classess.form} action={formAction}>
-          <input
-            className={classess.input}
-            placeholder="Bitte geben Sie den der Aktivität"
-            type="text"
-            id="activate"
-            name="activate"
-            required
-            style={{ display: isActive.id === 1 ? "block" : "none" }}
-          />
-          <input
-            className={classess.input}
-            placeholder="Bitte geben Sie die Art der Aktivität an."
-            type="text"
-            id="title"
-            name="title"
-            required
-            style={{ display: isActive.id === 2 ? "block" : "none" }}
-          />
-          <textarea
-            className={classess.textarea}
-            placeholder="Falls du eine Erklärung hast, füge sie hinzu."
-            id="subtitle"
-            name="subtitle"
-            required={isActive.id === 3}
-            style={{ display: isActive.id === 3 ? "block" : "none" }}
-          />
-          <input
-            className={classess.input}
-            placeholder="Geben Sie den Stückpreis an."
-            type="text"
-            id="price"
-            name="price"
-            required
-            style={{ display: isActive.id === 4 ? "block" : "none" }}
-            onChange={(e) => setInputValuePrice(e.target.value)}
-          />
-          <p className={classess.actions}>
-            <PriceFormSubmit />
-          </p>
-        </form> */}
         <form
           id="preis-form"
           className={classess.form}
@@ -164,7 +122,7 @@ export default function PreisForm() {
           )}
         </form>
       </Box>
-      <NavPriceFooter />
+      {/* <NavPriceFooter /> */}
       {/* <Box className={classess.footer}>
         {Features_Price.map((item) => {
           const Icon = item.icon;

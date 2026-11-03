@@ -1,9 +1,6 @@
 import { Box } from "@mui/material";
 import classess from "./page.module.css";
-import Stepper from "@/components/stepper/Stepper";
 import PreisForm from "@/components/form/preisform";
-import { FiPrinter } from "react-icons/fi";
-import { IoIosArrowForward } from "react-icons/io";
 import PriceHeader from "@/components/header/price-header";
 import NavPriceFooter from "@/components/nav-link/nav-price-footer";
 
@@ -36,9 +33,11 @@ export default async function SlugPreis({ params }) {
         <PreisForm />
       ) : decodedSlug === "Preis Liste" ? (
         <Box className={`fadeUp delay6 ${classess["wrapper-price-list"]}`}>
-          ads
+          <Box className={classess["wrapper-price-list-items"]}>1</Box>
+          <Box className={classess["wrapper-price-list-item"]}>2</Box>
         </Box>
       ) : null}
+
       <NavPriceFooter />
     </Box>
   );
