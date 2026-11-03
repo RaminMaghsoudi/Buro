@@ -7,7 +7,7 @@ export default function PreisPage() {
   return (
     <Box className={classess.SlugPreis}>
       <PriceHeader />
-      <NavPrice />
+      <NavPrice position="page-price" />
     </Box>
   );
 }

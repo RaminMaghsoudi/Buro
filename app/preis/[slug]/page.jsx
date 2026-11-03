@@ -5,6 +5,7 @@ import PreisForm from "@/components/form/preisform";
 import { FiPrinter } from "react-icons/fi";
 import { IoIosArrowForward } from "react-icons/io";
 import PriceHeader from "@/components/header/price-header";
+import NavPriceFooter from "@/components/nav-link/nav-price-footer";
 
 export default async function SlugPreis({ params }) {
   const { slug } = await params;
@@ -38,6 +39,7 @@ export default async function SlugPreis({ params }) {
           ads
         </Box>
       ) : null}
+      <NavPriceFooter />
     </Box>
   );
 }

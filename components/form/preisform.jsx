@@ -8,6 +8,7 @@ import { Save_Price } from "@/lib/actions";
 import PriceFormSubmit from "./price_form_submit";
 import { Features_Price } from "@/data/DATA";
 import Link from "next/link";
+import NavPriceFooter from "../nav-link/nav-price-footer";
 
 export default function PreisForm() {
   const steps = [
@@ -163,7 +164,8 @@ export default function PreisForm() {
           )}
         </form>
       </Box>
-      <Box className={classess.footer}>
+      <NavPriceFooter />
+      {/* <Box className={classess.footer}>
         {Features_Price.map((item) => {
           const Icon = item.icon;
           const content = (
@@ -178,11 +180,11 @@ export default function PreisForm() {
               href={`${item.href}/${item.title}`}
               className={classess.LINK}
             >
-              {content}
+              {content}***
             </Link>
           );
         })}
-      </Box>
+      </Box> */}
     </Box>
   );
 }
