@@ -1,5 +1,6 @@
+import { Box } from "@mui/material";
 import classess from "./page.module.css";
 
 export default function BuchhaltungPage() {
-  return <h1>buchhaltung</h1>;
+  return <Box className={classess.buchhaltungPage}>BuchhaltungPage</Box>;
 }

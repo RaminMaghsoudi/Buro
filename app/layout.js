@@ -1,4 +1,4 @@
-import MainHeader from "@/components/header/main-header";
+import MainHeader from "@/component/header/main-header";
 import "./globals.css";
 import { Box } from "@mui/material";
 

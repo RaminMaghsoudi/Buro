@@ -1,5 +1,6 @@
 import classess from "./page.module.css";
+import { Box } from "@mui/material";
 
 export default function RechnungenPage() {
-  return <h1>rechnungen</h1>;
+  return <Box className={classess.rechnungenPage}>RechnungenPage</Box>;
 }

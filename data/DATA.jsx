@@ -2,6 +2,7 @@ import { LiaEuroSignSolid } from "react-icons/lia";
 import { BsShield } from "react-icons/bs";
 import { TfiTimer } from "react-icons/tfi";
 import { CgMenuGridO } from "react-icons/cg";
+import { FaCanadianMapleLeaf } from "react-icons/fa6";
 
 export const Features_Price = [
   {
@@ -10,7 +11,6 @@ export const Features_Price = [
     title: "Neuen Preis hinzufügen",
     description:
       "Erstellen Sie neue Preise und fügen Sie alle wichtigen Informationen hinzu. Verwalten Sie Ihre Preise einfach und übersichtlich.",
-    delay: "delay4",
     href: "/preis",
   },
   {
@@ -19,7 +19,6 @@ export const Features_Price = [
     title: "Preis Liste",
     description:
       "Hier finden Sie alle gespeicherten Preise auf einen Blick. Bearbeiten, ergänzen und verwalten Sie Ihre Preise ganz einfach.",
-    delay: "delay5",
     href: "/preis",
   },
   {
@@ -28,7 +27,6 @@ export const Features_Price = [
     title: "Vorhandene Rechnungen",
     description:
       "Greifen Sie auf bereits erstellte Rechnungen zu. Sehen Sie Rechnungsdetails ein und verwalten Sie Ihre bisherigen Abrechnungen.",
-    delay: "delay6",
     href: "/rechnungen",
   },
   {
@@ -37,7 +35,12 @@ export const Features_Price = [
     title: "Preis Liste der Innung",
     description:
       "Hier finden Sie die offiziellen Preislisten Ihrer Innung. Nutzen Sie die hinterlegten Preise als Grundlage für Ihre Kalkulationen.",
-    delay: "delay7",
     href: "/preis",
   },
+];
+export const menus = [
+  { title: "Preis", href: "/preis", icon: FaCanadianMapleLeaf },
+  { title: "Rechnungen", href: "/rechnungen", icon: FaCanadianMapleLeaf },
+  { title: "Aufgaben", href: "/aufgaben", icon: FaCanadianMapleLeaf },
+  { title: "Buchhaltung", href: "/buchhaltung", icon: FaCanadianMapleLeaf },
 ];
