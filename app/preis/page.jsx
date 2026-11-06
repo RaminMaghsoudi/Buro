@@ -2,31 +2,11 @@ import { Box } from "@mui/material";
 import classess from "./page.module.css";
 import { Features_Price } from "@/data/DATA";
 import Link from "next/link";
-import H3 from "@/component/motion/H3";
-import H1 from "@/component/motion/H1";
 import DIV from "@/component/motion/DIV";
 
 export default async function PreisPage() {
   return (
     <Box className={classess.PreisPage}>
-      <H3
-        className={classess.title}
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.6 }}
-        aria-labelledby="office-title"
-      >
-        Preis
-      </H3>
-      <H1
-        className={classess.subTitle}
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.9 }}
-        aria-labelledby="office-subtitle"
-      >
-        Preis Anbieter
-      </H1>
       <nav className={classess.navigate} aria-label="Hauptnavigation">
         {Features_Price.map((item) => {
           const Icon = item.icon;

@@ -1,0 +1,39 @@
+.HeaderPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  color: #009d81;
+  font-family: CL;
+}
+.subTitle {
+  color: #24324d;
+  font-family: CB;
+  margin-top: -20px;
+}
+.points {
+  display: flex;
+  flex-direction: row;
+}
+.P1 {
+  background-color: #009d81;
+  width: 55px;
+  min-height: 2px;
+  border-radius: 2px;
+}
+.P2 {
+  background-color: #009d81;
+  width: 10px;
+  min-height: 2px;
+  border-radius: 2px;
+  margin-left: 3px;
+}
+.P3 {
+  background-color: #009d81;
+  width: 5px;
+  min-height: 2px;
+  border-radius: 2px;
+  margin-left: 3px;
+}

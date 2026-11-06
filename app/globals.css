@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -14,11 +13,6 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: CL;
-}
-
-section {
-  min-height: 100vh;
-  scroll-margin-top: 0px;
 }
 @font-face {
   font-family: "C";

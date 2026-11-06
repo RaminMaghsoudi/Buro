@@ -1,0 +1,37 @@
+.SlugPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: auto;
+  align-items: center;
+}
+.activity {
+  font-family: CL;
+  color: #7b876f;
+  margin-top: -20px;
+}
+.points {
+  display: flex;
+  flex-direction: row;
+  margin-top: -10px;
+}
+.P1 {
+  background-color: #009d81;
+  width: 55px;
+  min-height: 2px;
+  border-radius: 2px;
+}
+.P2 {
+  background-color: #009d81;
+  width: 10px;
+  min-height: 2px;
+  border-radius: 2px;
+  margin-left: 3px;
+}
+.P3 {
+  background-color: #009d81;
+  width: 5px;
+  min-height: 2px;
+  border-radius: 2px;
+  margin-left: 3px;
+}

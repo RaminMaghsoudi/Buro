@@ -6,15 +6,6 @@
   align-items: center;
   justify-content: flex-start;
 }
-.title {
-  color: #009d81;
-  font-family: CL;
-}
-.subTitle {
-  color: #24324d;
-  font-family: CB;
-  margin-top: -20px;
-}
 .activity {
   font-family: CL;
   color: #7b876f;
