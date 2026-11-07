@@ -1,5 +1,5 @@
 .Wrap {
-  width: 430px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
   flex-direction: column;
 }
 .input {
-  width: 350px;
+  width: 450px;
   min-height: 55px;
   border: 1px solid rgb(70, 70, 70, 0.5);
   outline: none;
@@ -33,7 +33,7 @@
   text-align: center;
 }
 .textarea {
-  width: 350px;
+  width: 450px;
   min-height: 150px;
   border: 1px solid rgb(70, 70, 70, 0.5);
   outline: none;
@@ -46,4 +46,49 @@
   text-align: center;
   resize: none;
   direction: rtl;
+}
+.Icons {
+  flex-direction: row;
+  width: 450px;
+  min-height: auto;
+  justify-content: space-between;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  gap: 0px;
+}
+.icon {
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  min-height: 40px;
+  border: 1px solid #9b9999;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #9b9999;
+  transition: 0.5s;
+}
+.icon:hover {
+  background-color: rgb(246, 157, 16, 0.4);
+  border: 1px solid rgb(246, 157, 16, 0.4);
+  color: rgb(51, 32, 2);
+}
+.selectedIcon {
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  min-height: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(246, 157, 16, 0.4);
+  border: 1px solid rgb(246, 157, 16, 0.4);
+  color: rgb(51, 32, 2);
 }
