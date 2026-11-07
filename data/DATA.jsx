@@ -30,6 +30,7 @@ import { BsMoonStars } from "react-icons/bs";
 import { TbLeaf2 } from "react-icons/tb";
 import { LiaCanadianMapleLeaf } from "react-icons/lia";
 import { GiChestnutLeaf } from "react-icons/gi";
+import { BiAdjust } from "react-icons/bi";
 
 export const Features_Price = [
   {
@@ -141,6 +142,99 @@ export const Icons = [
   },
   {
     id: 11,
-    icon: BiTachometer,
+    icon: GiSandsOfTime,
+  },
+  {
+    id: 12,
+    icon: RiTimer2Line,
+  },
+  {
+    id: 13,
+    icon: LuTimer,
+  },
+  {
+    id: 14,
+    icon: SiUpptime,
+  },
+  {
+    id: 15,
+    icon: FaSun,
+  },
+  {
+    id: 16,
+    icon: FiSun,
+  },
+  {
+    id: 17,
+    icon: TiWeatherPartlySunny,
+  },
+  {
+    id: 18,
+    icon: LiaCloudSunRainSolid,
+  },
+  {
+    id: 19,
+    icon: PiCloudSunLight,
+  },
+  {
+    id: 20,
+    icon: BsSuitClub,
+  },
+  {
+    id: 21,
+    icon: CiCloud,
+  },
+  {
+    id: 22,
+    icon: IoIosCloudOutline,
+  },
+  {
+    id: 23,
+    icon: GoMoon,
+  },
+  {
+    id: 24,
+    icon: BsMoonStars,
+  },
+  {
+    id: 25,
+    icon: TbLeaf2,
+  },
+  {
+    id: 26,
+    icon: LiaCanadianMapleLeaf,
+  },
+  {
+    id: 27,
+    icon: GiChestnutLeaf,
+  },
+  {
+    id: 28,
+    icon: BiAdjust,
+  },
+  {
+    id: 29,
+    icon: BiBadgeCheck,
+  },
+  {
+    id: 30,
+    icon: BiAtom,
+  },
+  {
+    id: 31,
+    icon: BiBasketball,
+  },
+  {
+    id: 32,
+    icon: BiBell,
+  },
+  {
+    id: 33,
+    icon: BiCctv,
   },
 ];
+import { BiBadgeCheck } from "react-icons/bi";
+import { BiAtom } from "react-icons/bi";
+import { BiBasketball } from "react-icons/bi";
+import { BiBell } from "react-icons/bi";
+import { BiCctv } from "react-icons/bi";

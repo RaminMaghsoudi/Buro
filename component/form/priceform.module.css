@@ -71,6 +71,7 @@
   text-align: center;
   color: #9b9999;
   transition: 0.5s;
+  margin-bottom: 5px;
 }
 .icon:hover {
   background-color: rgb(246, 157, 16, 0.4);
@@ -91,4 +92,5 @@
   background-color: rgb(246, 157, 16, 0.4);
   border: 1px solid rgb(246, 157, 16, 0.4);
   color: rgb(51, 32, 2);
+  margin-bottom: 5px;
 }
