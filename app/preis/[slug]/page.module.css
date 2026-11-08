@@ -35,3 +35,48 @@
   border-radius: 2px;
   margin-left: 3px;
 }
+.wrapper-price-list {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  min-height: calc(100vh - 200px);
+}
+.wrapper-price-item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  align-items: center;
+}
+.wrapper-price-item::-webkit-scrollbar {
+  display: none;
+}
+.wrapper-price-info {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 300px);
+  min-height: calc(100vh - 200px);
+}
+.searchContainer {
+  width: 278px;
+  min-height: 38px;
+  border-radius: 35px;
+  border: 1px solid #b3b2b2;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.search {
+  width: 260px;
+  min-height: 25px;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+}

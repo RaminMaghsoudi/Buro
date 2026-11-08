@@ -31,6 +31,26 @@ import { TbLeaf2 } from "react-icons/tb";
 import { LiaCanadianMapleLeaf } from "react-icons/lia";
 import { GiChestnutLeaf } from "react-icons/gi";
 import { BiAdjust } from "react-icons/bi";
+import { BiBadgeCheck } from "react-icons/bi";
+import { BiAtom } from "react-icons/bi";
+import { BiBasketball } from "react-icons/bi";
+import { BiBell } from "react-icons/bi";
+import { BiCctv } from "react-icons/bi";
+import { FaCarSide } from "react-icons/fa6";
+import { IoChevronForwardSharp } from "react-icons/io5";
+import { HiOutlineHomeModern } from "react-icons/hi2";
+import { GrLicense } from "react-icons/gr";
+import { TfiBookmarkAlt } from "react-icons/tfi";
+import { CiSun } from "react-icons/ci";
+import { MdOutlineLocalPolice } from "react-icons/md";
+import { IoSearchOutline } from "react-icons/io5";
+import { FaPlus } from "react-icons/fa6";
+import { FaRegUser } from "react-icons/fa";
+import { PiBellRingingThin } from "react-icons/pi";
+import { FaUserCircle } from "react-icons/fa";
+import { PiBellSimpleRingingFill } from "react-icons/pi";
+import { IoChevronDownOutline } from "react-icons/io5";
+import { IoIosArrowUp } from "react-icons/io";
 
 export const Features_Price = [
   {
@@ -232,9 +252,64 @@ export const Icons = [
     id: 33,
     icon: BiCctv,
   },
+  {
+    id: 34,
+    icon: IoIosArrowUp,
+  },
+  {
+    id: 35,
+    icon: IoChevronDownOutline,
+  },
+  {
+    id: 36,
+    icon: PiBellSimpleRingingFill,
+  },
+  {
+    id: 37,
+    icon: FaUserCircle,
+  },
+  {
+    id: 38,
+    icon: PiBellRingingThin,
+  },
+  {
+    id: 39,
+    icon: FaRegUser,
+  },
+  {
+    id: 40,
+    icon: FaPlus,
+  },
+  {
+    id: 41,
+    icon: IoSearchOutline,
+  },
+  {
+    id: 42,
+    icon: MdOutlineLocalPolice,
+  },
+  {
+    id: 43,
+    icon: CiSun,
+  },
+  {
+    id: 44,
+    icon: TfiBookmarkAlt,
+  },
+  {
+    id: 45,
+    icon: GrLicense,
+  },
+  {
+    id: 46,
+    icon: HiOutlineHomeModern,
+  },
+  {
+    id: 47,
+    icon: IoChevronForwardSharp,
+  },
+  {
+    id: 48,
+    icon: FaCarSide,
+  },
 ];
-import { BiBadgeCheck } from "react-icons/bi";
-import { BiAtom } from "react-icons/bi";
-import { BiBasketball } from "react-icons/bi";
-import { BiBell } from "react-icons/bi";
-import { BiCctv } from "react-icons/bi";

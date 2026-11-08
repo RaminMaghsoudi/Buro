@@ -4,7 +4,7 @@ import H4 from "../motion/H4";
 import classess from "./header-price.module.css";
 import { Box } from "@mui/material";
 
-export default function HeaderPrice({ decodedSlug }) {
+export default function HeaderPrice() {
   return (
     <main className={classess.HeaderPrice}>
       <H3
