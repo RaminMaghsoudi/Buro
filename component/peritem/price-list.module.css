@@ -6,6 +6,7 @@
   flex-direction: row;
   cursor: pointer;
   transition: 0.5s;
+  margin-bottom: 5px;
 }
 .wrapper-price-list-item:hover {
   background-color: rgba(180, 200, 180, 0.5);
@@ -28,9 +29,9 @@
   border-radius: 50%;
   background-color: #e0e3e2;
 }
-.icon-style {
-  background-color: #e0e3e2;
-}
+/* .wrapper-price-list-item:hover .icon {
+  background-color: rgba(180, 200, 180, 0.5);
+} */
 .info {
   width: 200px;
   min-height: 55px;
