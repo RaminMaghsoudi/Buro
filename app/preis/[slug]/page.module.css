@@ -1,8 +1,41 @@
+.CategorySlugLayout {
+  display: flex;
+  flex-direction: row;
+}
 .SlugPage {
   display: flex;
   flex-direction: column;
+  width: calc(90% - 300px);
+  min-height: 40px;
+  height: calc(100vh - 250px);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.Header {
+  font-family: CL;
+  font-size: 1rem;
+  color: #477073;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  margin-top: -100px;
+}
+.percent {
+  padding: 12px;
+  background-color: #d9dddc;
+  border-radius: 50%;
+  color: #477073;
+  margin-bottom: 15px;
+}
+.SlugPageLayout {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  min-height: auto;
+  min-height: 40px;
   align-items: center;
 }
 .activity {

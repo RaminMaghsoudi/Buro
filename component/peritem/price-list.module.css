@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #e0e3e2;
+  background-color: #d9dddc;
 }
 /* .wrapper-price-list-item:hover .icon {
   background-color: rgba(180, 200, 180, 0.5);
@@ -43,12 +43,12 @@
 }
 .info span {
   font-family: CB;
-  color: #24324d;
+  color: #02494e;
 }
 .info sub {
   font-family: CL;
   font-size: 0.8rem;
-  color: #838385;
+  color: #696969;
 }
 .direction {
   width: 30px;
@@ -60,38 +60,3 @@
   text-align: center;
   color: #899787;
 }
-/* .wrapper-price-list-item-icon {
-  width: 55px;
-  min-height: 55px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #e0e3e2;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.icon {
-  color: #445652;
-}
-.wrapper-price-list-item-title {
-  width: 200px;
-  min-height: 55px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: #233633;
-  justify-content: center;
-}
-
-.wrapper-price-list-item-forward {
-  width: 50px;
-  min-height: 55px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.forward {
-  transform: rotate(90deg);
-} */

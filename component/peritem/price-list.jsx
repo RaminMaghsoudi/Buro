@@ -25,7 +25,7 @@ export default function PriceList({ span, sub, idicon, decodedSlug }) {
             <Icon
               size={23}
               className={classess["icon-style"]}
-              color="#24324d"
+              color="#477073"
             />
           )}
         </Box>
@@ -35,7 +35,7 @@ export default function PriceList({ span, sub, idicon, decodedSlug }) {
         <sub>{sub}</sub>
       </Box>
       <Box className={classess.direction}>
-        <Icon47 className={classess.Forward} />
+        <Icon47 className={classess.Forward} color="#696969" />
       </Box>
     </Link>
   );

@@ -1,12 +1,12 @@
 import { Box } from "@mui/material";
 import classess from "./page.module.css";
-import { Features_Price } from "@/data/DATA";
 import Link from "next/link";
 import DIV from "@/component/motion/DIV";
+import { Features_Price } from "@/data/DATA";
 
-export default async function PreisPage() {
+export default function PricePage() {
   return (
-    <Box className={classess.PreisPage}>
+    <Box className={classess.PricePage}>
       <nav className={classess.navigate} aria-label="Hauptnavigation">
         {Features_Price.map((item) => {
           const Icon = item.icon;

@@ -1,20 +1,14 @@
-.price-list {
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  min-height: calc(100vh - 230px);
-}
 .price-list-items {
   display: flex;
   flex-direction: column;
   width: 300px;
-  min-height: calc(100vh - 230px);
+  margin-left: 5%;
+  height: calc(100vh - 250px);
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
-.price-list-info {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 300px);
-  min-height: calc(100vh - 230px);
+.price-list-items::-webkit-scrollbar {
+  display: none;
 }
 .price-list-items-search {
   width: 300px;
@@ -26,7 +20,7 @@
 }
 .price-list-items-item {
   width: 300px;
-  height: calc(100vh - 300px);
+  height: calc(100vh - 350px);
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -37,7 +31,7 @@
   width: 276px;
   min-height: 45px;
   border-radius: 35px;
-  border: 1px solid #b3b2b2;
+  border: 1px solid #02494e;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;

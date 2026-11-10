@@ -1,24 +1,15 @@
-.PriceLayoutWrapper {
+.PricePage {
   width: 100%;
   height: calc(100vh - 80px);
-  overflow-y: scroll;
-  scrollbar-width: none;
-}
-.PriceLayoutWrapper::-webkit-scrollbar {
-  display: none;
-}
-.PreisPage {
-  width: 100%;
-  min-height: calc(100vh - 190px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
-.activity {
-  font-family: CL;
-  color: #7b876f;
-  margin-top: -15px;
+.PricePage::-webkit-scrollbar {
+  display: none;
 }
 .navigate {
   display: grid;

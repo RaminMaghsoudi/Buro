@@ -1,0 +1,14 @@
+.CategoriSlug {
+  display: flex;
+  flex-direction: column;
+  width: calc(90% - 300px);
+  min-height: 40px;
+  height: calc(100vh - 250px);
+  align-items: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  border: 1px solid gray;
+}
+.CategoriSlug::-webkit-scrollbar {
+  display: none;
+}
