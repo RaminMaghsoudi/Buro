@@ -4,11 +4,76 @@
   width: calc(90% - 300px);
   min-height: 40px;
   height: calc(100vh - 250px);
+}
+.header {
+  width: 99%;
+  min-height: 120px;
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  width: 170px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.header-info {
+  width: calc(100% - 170px - 170px);
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-info-title {
+  font-family: CB;
+  font-size: 1.5rem;
+  letter-spacing: -2px;
+  color: #11274f;
+}
+.header-info-subtitle {
+  font-family: CL;
+  font-size: 1rem;
+  color: #484d64;
+}
+.header-info-describtion {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  color: #484d64;
+  font-size: 0.8rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.text {
+  margin-left: 5px;
+  font-family: CB;
+}
+.FaRegUser {
+  margin-left: 50px;
+}
+.active {
+  color: #196b5e;
+}
+.icon-style {
+  padding: 15px;
+  background-color: #d8dfdf;
+  border-radius: 0px 30px 0px 30px;
+}
+.section {
+  width: 99%;
+  height: calc(100vh - 370px);
+  display: flex;
+  flex-direction: row;
   overflow-y: scroll;
   scrollbar-width: none;
-  border: 1px solid gray;
 }
-.CategoriSlug::-webkit-scrollbar {
+.section::-webkit-scrollbar {
   display: none;
+}
+.section-list {
+  display: flex;
+  flex-direction: row;
+  min-width: 150px;
 }

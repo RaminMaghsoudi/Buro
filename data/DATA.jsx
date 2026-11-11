@@ -51,6 +51,10 @@ import { FaUserCircle } from "react-icons/fa";
 import { PiBellSimpleRingingFill } from "react-icons/pi";
 import { IoChevronDownOutline } from "react-icons/io5";
 import { IoIosArrowUp } from "react-icons/io";
+import { CgCalendarDates } from "react-icons/cg";
+import { FaRegDotCircle } from "react-icons/fa";
+import { FaCircle } from "react-icons/fa";
+import { FaUserAlt } from "react-icons/fa";
 
 export const Features_Price = [
   {
@@ -312,4 +316,26 @@ export const Icons = [
     id: 48,
     icon: FaCarSide,
   },
+  {
+    id: 49,
+    icon: CgCalendarDates,
+  },
+  {
+    id: 50,
+    icon: FaRegDotCircle,
+  },
+  {
+    id: 51,
+    icon: FaCircle,
+  },
+  {
+    id: 52,
+    icon: FaUserAlt,
+  },
+  {
+    id: 53,
+    icon: TfiViewListAlt,
+  },
 ];
+
+import { TfiViewListAlt } from "react-icons/tfi";

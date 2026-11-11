@@ -7,6 +7,10 @@
   justify-content: flex-start;
   overflow-y: scroll;
   scrollbar-width: none;
+  /* background-image: url("../../assets/images/backprce.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 .PricePage::-webkit-scrollbar {
   display: none;
